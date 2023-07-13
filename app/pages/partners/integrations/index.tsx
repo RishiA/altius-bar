@@ -51,8 +51,8 @@ function IntegrationPartnersPage(props: Props) {
   )
   const router = useRouter()
 
-  const meta_title = 'Find an Integration'
-  const meta_description = `Use your favorite tools with Supabase.`
+  const meta_title = 'Find a Cocktail'
+  const meta_description = `Sort using your preferred base spirit.`
 
   const [search, setSearch] = useState('')
   const [debouncedSearchTerm] = useDebounce(search, 300)
@@ -101,7 +101,7 @@ function IntegrationPartnersPage(props: Props) {
   return (
     <>
       <Head>
-        <title>{meta_title} | Supabase Partner Gallery Example</title>
+        <title>{meta_title} | Find a Cocktail</title>
         <meta name="description" content={meta_description}></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -158,7 +158,7 @@ function IntegrationPartnersPage(props: Props) {
                     <PartnerLinkBox
                       title="Experts"
                       color="blue"
-                      description="Explore our certified Supabase agency experts that build with Supabase"
+                      description="Sort using your preferred base spirit."
                       href={`/partners/experts`}
                       icon={
                         <svg
